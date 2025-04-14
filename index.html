@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trova la posizione</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .button {
+            background-color: #fff;
+            color: #0072ff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .button:hover {
+            background-color: #0072ff;
+            color: #fff;
+            transform: scale(1.1);
+        }
+        .button:active {
+            transform: scale(0.9);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Dove trovarci</h1>
+    <p>Clicca sui pulsanti sottostanti per aprire la mappa nella tua app preferita</p>
+    <div>
+        <button class="button" onclick="window.open('https://maps.apple.com/?q=45.990444,9.680639', '_blank')">Apri in Apple Maps</button>
+        <button class="button" onclick="window.open('https://www.google.com/maps/place/45%C2%B059%2725.6%22N+9%C2%B040%2750.3%22E/@45.990444,9.680639,17z', '_blank')">Apri in Google Maps</button>
+    </div>
+</div>
+
+</body>
+</html>
